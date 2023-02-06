@@ -3,7 +3,7 @@ import { praseStrEmpty } from '@/utils/sg'
 // 查询用户列表
 export function listUser(query) {
   return request({
-    url: '/user/getInfo/list',
+    url: '/user/list',
     method: 'get',
     params: query
   })
@@ -38,7 +38,7 @@ export function resetUserPwd(userId, password) {
     password
   }
   return request({
-    url: '/system/user/resetPwd',
+    url: '/user/resetPwd',
     method: 'put',
     data: data
   })
